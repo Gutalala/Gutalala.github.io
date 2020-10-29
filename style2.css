@@ -1,0 +1,255 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900&display=swap');
+
+*
+{
+    margin: 0;
+    padding: 0;
+    -webkit-overflow-scrolling: touch;
+}
+
+body
+{
+    background: white;
+    min-height: 1500px;
+}
+#text
+{
+    font-family: 'Poppins', sans-serif;
+    position: relative;
+    color: white;
+    font-size: 10em;
+    z-index: 1;
+}
+section.parallax
+{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section.parallax::before
+{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 200px;
+    background: linear-gradient(to top, white, 30%, transparent);
+    z-index: 10000;
+}
+
+section.parallax::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    background: #0a2a43;
+    z-index: 10000;
+    mix-blend-mode: color;
+}
+
+section.parallax img
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    pointer-events: none;
+}
+
+#road
+{
+    z-index: 2;
+}
+
+.pre {
+padding: 0;
+margin: 0;
+}
+
+.load {
+margin: 0 auto;
+min-height: 100vh;
+width: 100%;
+background: black;
+}
+
+.term {
+    font-family: monospace;
+    color: greenyellow;
+    opacity: 0.8;
+    font-size: 0.5em;
+    overflow-y: auto;
+    overflow-x: hidden;
+    padding-top: 10px;
+    padding-left: 20px;
+    background-color: transparent;
+}
+
+.term:after {
+content: "_";
+opacity: 1;
+animation: cursor 1s infinite;
+}
+
+@keyframes cursor {
+0% {
+    opacity: 0;
+}
+40% {
+    opacity: 0;
+}
+50% {
+    opacity: 1;
+}
+90% {
+    opacity: 1;
+}
+100% {
+    opacity: 0;
+}
+}
+
+.gradient {
+    background-image: linear-gradient(45deg, red, blue);            
+}
+
+.panel-block:hover {
+    background-color: rgba(1, g1, 1, 0.2);
+}
+
+.selectable {
+    opacity: 1.0;
+    transition:0.25s;
+}
+
+.selectable:hover {
+    opacity: 0.5;
+    transition:0.25s;
+}
+
+.row-image {
+    min-width: 100vw;
+}
+
+.top-pad {
+        margin-top: 0px;
+        margin-left: 0px;
+        margin-right: 0px;
+        margin-bottom: 0px;
+    }
+
+    .video {
+        width: 100vh;
+        height: 25vh;
+    }
+
+    .line {
+        height: 1px;
+        width: 100vw;
+        background-color: transparent;
+        margin-top: 128px;
+        /* margin-bottom: 16px; */
+    }
+
+    .menu-column {
+        display: none;
+    }
+
+    .term {
+        padding-top: 20vh;
+    }
+
+@media only screen and (min-width: 768px) {
+
+    .term {
+        padding-top: 16px;
+    }
+
+    .menu-column {
+        opacity: 1.0;
+    }
+
+    .line {
+        margin-top: 50vh;
+        height: 1px;
+        width: 300px;
+        background-color: transparent;
+    }
+
+    .main-content {
+        overflow:auto;
+        height: 100vh;
+    }
+
+    .term {
+        font-size: 1.5em;
+    }
+
+    .top-pad {
+        margin-top: 64px;
+        margin-left: 0px;
+        margin-right: 0px;
+        margin-bottom: 0px;
+    }
+
+    .top-pad-guarunteed {
+        margin-top: 64px;
+        margin-left: 0px;
+        margin-right: 0px;
+        margin-bottom: 0px;
+    }
+    
+    .row-image {
+        min-width: 100px;
+        max-width: 500px;                
+        margin: 64px;
+    }
+
+    .video {
+        width: 600px;
+        height: 350px;
+    }
+}
+
+.top-pad-guarunteed {
+    margin-top: 128px;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-bottom: 0px;
+}
+
+.hidden {
+    opacity: 0;           
+    height: 0px;
+    overflow: hidden;             
+}
+
+.fade-in {
+    opacity: 1.00;            
+    -webkit-transition: opacity 1s ease-in;
+    -moz-transition: opacity 1s ease-in;
+        -ms-transition: opacity 1s ease-in;
+        -o-transition: opacity 1s ease-in;
+            transition: opacity 1s ease-in;
+}     
+
+.row {
+    display: flex;
+    flex-direction: row;
+    margin: 32px;            
+}   
+
+.pillar {
+    display: flex;
+    flex-direction: column;
+    margin: 32px;
+}
