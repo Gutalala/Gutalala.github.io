@@ -205,7 +205,7 @@ animation: cursor 1s infinite;
 /* Slide-down menu on mobile */
 @media (max-width: 767px) {
     .menu-column.sticky-visible {
-      display: none;
+      display: none !important;
     }
 }
 
