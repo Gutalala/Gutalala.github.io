@@ -157,7 +157,7 @@ animation: cursor 1s infinite;
 
     .menu-column {
         opacity: 1.0;
-        display: none;
+        display: none !important;
     }
 
     .line {
