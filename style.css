@@ -5,6 +5,52 @@
 }
 
 
+
+section.parallax {
+position: relative;
+height: 100vh;
+width: 100%;
+overflow: hidden;
+}
+
+section.parallax img {
+position: absolute;
+width: 100%;
+object-fit: cover;
+}
+
+#bg {
+z-index: 1;
+}
+
+#moon {
+z-index: 2;
+top: 20%;
+left: 0;
+width: 200px;
+}
+
+#mountain {
+z-index: 3;
+bottom: 0;
+}
+
+#road {
+z-index: 4;
+bottom: 0;
+}
+
+#text {
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+font-size: 4em;
+color: white;
+z-index: 5;
+}
+
+
 pre {
 padding: 0;
 margin: 0;
@@ -121,8 +167,8 @@ animation: cursor 1s infinite;
     }
 
     .main-content {
-        overflow:auto;
-        height: 100vh;
+        overflow:hidden;
+        min-height: 100vh;
     }
 
     .term {
