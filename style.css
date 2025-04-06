@@ -159,6 +159,14 @@ animation: cursor 1s infinite;
         opacity: 1.0;
     }
 
+    .menu-column.sticky-visible {
+        display: block;
+        position: sticky;
+        top: 0;
+        height: 100vh;
+        z-index: 10;
+    }
+
     .line {
         margin-top: 50vh;
         height: 1px;
@@ -198,6 +206,20 @@ animation: cursor 1s infinite;
     .video {
         width: 600px;
         height: 350px;
+    }
+}
+
+/* Slide-down menu on mobile */
+@media (max-width: 767px) {
+    .menu-column.sticky-visible {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: auto;
+      background: white;
+      z-index: 1000;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
     }
 }
 
