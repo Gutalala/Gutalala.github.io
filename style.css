@@ -157,7 +157,6 @@ animation: cursor 1s infinite;
 
     .menu-column {
         opacity: 1.0;
-        display: none !important;
     }
 
     .line {
@@ -203,8 +202,8 @@ animation: cursor 1s infinite;
 }
 
 /* Slide-down menu on mobile */
-@media (max-width: 767px) {
-    .menu-column.sticky-visible {
+@media only screen and (max-width: 767px), (max-height: 400px)  {
+    .menu-column {
       display: none !important;
     }
 }
